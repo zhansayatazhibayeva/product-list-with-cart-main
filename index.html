@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+  <title>Frontend Mentor | Product list with cart</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <script defer src="script.js"></script>
+  <h1>Desserts</h1>
+  <div class="container">
+    <div class="desserts">
+      <div class="dessert dessert-1">
+        <img class="dessert-photo" src="./assets/images/image-waffle-desktop.jpg" alt="waffle with berries">
+        <div class="add-to-card" id="add-to-card">
+          <img src="./assets/images/icon-add-to-cart.svg">
+          <span>Add to Card</span>
+        </div>
+        <div class="counter">
+          <button id="remove">-</button>
+          <span class="counter-1" id="counter-1">0</span>
+          <button id="add">+</button>
+        </div>
+        <div class="info">
+          <span class="dessert-categoty">Waffle</span>
+          <span class="dessert-name">Waffle with Berries</span>
+          <span class="dessert-price">$6.50</span>  
+        </div>
+       </div>
+      <div class="dessert dessert-2">
+        <img class="dessert-photo"  src="./assets/images/image-creme-brulee-desktop.jpg" alt="waffle with berries">
+        <div class="add-to-card" id="add-to-card">
+          <img src="./assets/images/icon-add-to-cart.svg">
+          <span>Add to Card</span>
+        </div>
+        <div class="counter">
+          <button id="remove">-</button>
+          <span class="counter-2" id="counter-2">0</span>
+          <button id="add">+</button>
+        </div>
+        <div class="info">
+          <span class="dessert-categoty"> Crème Brûlée</span>
+          <span class="dessert-name">Vanilla Bean Crème Brûlée</span>
+          <span class="dessert-price">$7.00</span>
+        </div>
+      </div>
+      <div class="dessert dessert-3">
+        <img class="dessert-photo" src="./assets/images/image-macaron-desktop.jpg" alt="waffle with berries">
+        <div class="add-to-card" id="add-to-card">
+          <img src="./assets/images/icon-add-to-cart.svg">
+          <span>Add to Card</span>
+        </div>
+        <div class="counter">
+          <button id="remove">-</button>
+          <span class="counter-3" id="counter-3">0</span>
+          <button id="add">+</button>
+        </div>
+        <div class="info">
+          <span class="dessert-categoty"> Macaron</span>
+          <span class="dessert-name">Macaron Mix of Five</span>
+          <span class="dessert-price">$8.00</span>  
+        </div>
+      </div>
+      <div class="dessert dessert-4">
+        <img class="dessert-photo" src="./assets/images/image-tiramisu-desktop.jpg" alt="waffle with berries">
+        <div class="add-to-card" id="add-to-card">
+          <img src="./assets/images/icon-add-to-cart.svg">
+          <span>Add to Card</span>
+        </div>
+        <div class="counter">
+          <button id="remove">-</button>
+          <span class="counter-4" id="counter-4">0</span>
+          <button id="add">+</button>
+        </div>
+        <div class="info">
+          <span class="dessert-categoty">Tiramisu</span>
+          <span class="dessert-name">Classic Tiramisu</span>
+          <span class="dessert-price">$5.50</span>
+        </div>
+      </div>
+      <div class="dessert dessert-5">
+        <img class="dessert-photo" src="./assets/images/image-baklava-desktop.jpg" alt="waffle with berries">
+        <div class="add-to-card" id="add-to-card">
+          <img src="./assets/images/icon-add-to-cart.svg">
+          <span>Add to Card</span>
+        </div>
+        <div class="counter">
+          <button id="remove">-</button>
+          <span class="counter-5" id="counter-5">0</span>
+          <button id="add">+</button>
+        </div>
+        <div class="info">
+          <span class="dessert-categoty">Baklava</span>
+          <span class="dessert-name">Pistachio Baklava</span>
+          <span class="dessert-price">$4.00</span>  
+        </div>
+      </div>
+      <div class="dessert dessert-6">
+        <img class="dessert-photo" src="./assets/images/image-meringue-desktop.jpg" alt="waffle with berries">
+        <div class="add-to-card" id="add-to-card">
+          <img src="./assets/images/icon-add-to-cart.svg">
+          <span>Add to Card</span>
+        </div>
+        <div class="counter">
+          <button id="remove">-</button>
+          <span class="counter-6" id="counter-6">0</span>
+          <button id="add">+</button>
+        </div>
+        <div class="info">
+          <span class="dessert-categoty">Pie</span>
+          <span class="dessert-name">Lemon Meringue Pie</span>
+          <span class="dessert-price">$5.00</span>  
+        </div>
+      </div>
+      <div class="dessert dessert-7">
+        <img class="dessert-photo" src="./assets/images/image-cake-desktop.jpg" alt="waffle with berries">
+        <div class="add-to-card" id="add-to-card">
+          <img src="./assets/images/icon-add-to-cart.svg">
+          <span>Add to Card</span>
+        </div>
+        <div class="counter">
+          <button id="remove">-</button>
+          <span class="counter-7" id="counter-7">0</span>
+          <button id="add">+</button>
+        </div>
+        <div class="info">
+          <span class="dessert-categoty">Cake</span>
+          <span class="dessert-name">Red Velvet Cake</span>
+          <span class="dessert-price">$4.50</span>  
+        </div>
+      </div>
+      <div class="dessert dessert-8">
+        <img class="dessert-photo" src="./assets/images/image-brownie-desktop.jpg" alt="waffle with berries">
+        <div class="add-to-card" id="add-to-card">
+          <img src="./assets/images/icon-add-to-cart.svg">
+          <span>Add to Card</span>
+        </div>
+        <div class="counter">
+          <button id="remove">-</button>
+          <span class="counter-8" id="counter-8">0</span>
+          <button id="add">+</button>
+        </div>
+        <div class="info">
+          <span class="dessert-categoty">Brownie</span>
+          <span class="dessert-name"> Salted Caramel Brownie</span>
+          <span class="dessert-price">$4.50</span>  
+        </div>
+      </div>
+      <div class="dessert dessert-9">
+        <img class="dessert-photo" src="./assets/images/image-panna-cotta-desktop.jpg" alt="waffle with berries">
+        <div class="add-to-card" id="add-to-card">
+          <img src="./assets/images/icon-add-to-cart.svg">
+          <span>Add to Card</span>
+        </div>
+        <div class="counter">
+          <button id="remove">-</button>
+          <span class="counter-9" id="counter-9">0</span>
+          <button id="add">+</button>
+        </div>
+        <div class="info">
+          <span class="dessert-categoty">Panna Cotta</span>
+          <span class="dessert-name"> Vanilla Panna Cotta</span>
+          <span class="dessert-price">$6.50</span>
+        </div>
+      </div>
+    </div>
+    <div class="cart">
+      <h2>Your Cart (<span class="total-sum">0</span>)</h2>
+      <div class="no-item">
+        <img src="./assets/images/illustration-empty-cart.svg">
+        <p>Your added items will appear here</p>
+      </div>
+      <div class="cartItemsContainer">
+      </div>
+    </div>
+  </div>
+  
+</body>
+</html>
